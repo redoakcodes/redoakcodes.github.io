@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>redoak.codes</title>
+        <style>
+            body {
+                background-color: #D9F5E7;
+                color: #471212;
+                font-family: "Lexend", sans-serif;
+                font-optical-sizing: auto;
+                font-style: normal;
+                font-variation-settings: 'LXND' 12;
+                line-height: 1.5;
+                display: flex;
+                justify-content: center;
+            }
+
+            body > div {
+                display: flex;
+                flex-direction: column;
+                width: 500pt;
+                /*margin: 75pt 100pt 75pt 100pt;*/
+                margin-top: 50pt;
+                padding: 25pt 50pt 25pt 50pt;
+                border: 12pt solid rgba(42, 165, 104, 0.25);
+                border-radius: 25pt;
+                background-color: rgba(256, 256, 256, 0.55);
+                gap: 8pt;
+            }
+
+            header {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items:center;
+                order: 1;
+                border-block: 6pt solid rgba(165, 42, 42, 0.55);
+                border-radius: 6pt;
+            }
+
+            header div.left {
+                display: flex;
+                flex-direction: column;
+            }
+
+            header .title {
+                font-weight: 700;
+                font-size: 32pt;
+                font-variant: small-caps;
+            }
+
+            header .subtitle {
+                color: rgba(71, 18, 18, 0.55);
+            }
+
+            header img {
+                width: 200pt;
+                height: 200pt;
+            }
+
+            main {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                flex-basis: 100%;
+                order: 2;
+                gap: 32px;
+            }
+
+            article {
+                padding-top: 24pt;
+                flex-basis: 65%;
+            }
+
+            aside {
+                flex-basis: 35%;
+            }
+
+            div.project {
+                display: flex;
+                flex-wrap: wrap;
+                margin-top: 12pt;
+            }
+
+            div.project:nth-child(3n-3) .title {
+                border-left: 5pt solid rgba(165, 42, 42, 0.75);
+            }
+
+            div.project:nth-child(3n-2) .title {
+                border-left: 5pt solid rgba(42, 165, 104, 0.75);
+            }
+
+            div.project:nth-child(3n-1) .title {
+                border-left: 5pt solid rgba(42, 104, 165, 0.75);
+            }
+
+            div.project > .title {
+                font-size: 16pt;
+                flex-basis: 100%;
+            }
+
+            div.project > .title > a {
+                color: inherit;
+                text-decoration: inherit;
+            }
+
+            div.project .description {
+                font-size: 10pt;
+            }
+
+            div.project img {
+                width: 16pt;
+                height: 16pt;
+                padding: 4pt;
+            }
+
+            div.social {
+                display: flex; 
+                gap: 8px; 
+                flex-wrap: wrap; 
+                justify-content: right;
+                padding-bottom: 8pt;
+            }
+
+            div.social a {
+                display: inline-flex; 
+                align-items: center; 
+                justify-content: center; 
+                width: 16pt; 
+                height: 16pt; 
+                padding: 4pt; 
+                /*background: linear-gradient(135deg, #2aa568 0%, #a52a2a 100%); 
+                background: white;
+                border-radius: 50%; 
+                color: #ffffff; 
+                text-decoration: none;*/
+            }
+
+            article span.first {
+                font-size: 24pt;
+            }
+        </style>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <div>
+            <header>
+                <div class="left">
+                    <div class="title">redoak.codes</div>
+                    <div class="subtitle">Brent Johnson, Staff Software Engineer</div>
+                </div>
+                <img src="./assets/Redoakcodes_logo.svg" />
+            </header>
+
+            <main>
+                <article>
+                    <section>
+                        <p>
+                            <span class="first">H</span>i. I'm Brent. This is a webpage. In fact, its my webpage.
+                        </p>
+                        <p>
+                            I've been a Software Engineer for 20+ years and in the healthcare space for the last 15. 
+                        </p>
+                    </section>
+                </article>
+
+                <aside>
+                    <div class="social">
+                        <a href="https://www.linkedin.com/in/brent-johnson-5b165a25" >
+                            <svg height="32" viewBox="0 0 72 72" width="32" id="linkedin">
+                                <g fill="none" fill-rule="evenodd">
+                                    <path d="M8,72 L64,72 C68.418278,72 72,68.418278 72,64 L72,8 C72,3.581722 68.418278,-8.11624501e-16 64,0 L8,0 C3.581722,8.11624501e-16 -5.41083001e-16,3.581722 0,8 L0,64 C5.41083001e-16,68.418278 3.581722,72 8,72 Z" fill="#007EBB"/>
+                                    <path d="M62,62 L51.315625,62 L51.315625,43.8021149 C51.315625,38.8127542 49.4197917,36.0245323 45.4707031,36.0245323 C41.1746094,36.0245323 38.9300781,38.9261103 38.9300781,43.8021149 L38.9300781,62 L28.6333333,62 L28.6333333,27.3333333 L38.9300781,27.3333333 L38.9300781,32.0029283 C38.9300781,32.0029283 42.0260417,26.2742151 49.3825521,26.2742151 C56.7356771,26.2742151 62,30.7644705 62,40.051212 L62,62 Z M16.349349,22.7940133 C12.8420573,22.7940133 10,19.9296567 10,16.3970067 C10,12.8643566 12.8420573,10 16.349349,10 C19.8566406,10 22.6970052,12.8643566 22.6970052,16.3970067 C22.6970052,19.9296567 19.8566406,22.7940133 16.349349,22.7940133 Z M11.0325521,62 L21.769401,62 L21.769401,27.3333333 L11.0325521,27.3333333 L11.0325521,62 Z" fill="#FFF"/>
+                                </g>
+                            </svg>
+                        </a>
+                        <a href="https://substack.com/@redoakcodes">
+                            <svg version="1.1" viewBox="0 113.82 248.07 282.18" width="32" height="32" id="substack">
+                                <path d="M247.42,396h-.35l-122.92-68.98L1.29,396H0v-155l248,.21.07,150.69c0,1.67-.3,3.01-.66,4.1Z" style="fill: #fe6718;"/>
+                                <polygon points="0 147.8 0 114 248 113.82 247.93 148 0 147.8" style="fill: #fe6718;"/>
+                                <polygon points="0 210.8 0 177 248 176.82 247.86 211 0 210.8" style="fill: #fe6718;"/>
+                            </svg>
+                        </a>
+                        <a href="https://github.com/redoakcodes/">
+                            <img src="./assets/GitHub_Invertocat_Black.svg" />
+                        </a>
+                    </div>
+
+                    <div>Projects I am currently working on.</div>
+                    <div class="project">
+                        <div class="title">
+                            <a href="https://github.com/redoakcodes/booksaga">
+                                BookSaga
+                                <img src="./assets/GitHub_Invertocat_Black.svg" alt="GitHub Logo" />
+                            </a>
+                        </div>
+                        <div class="description">
+                            Markdown-based manuscript editor, with built in wiki, custom writing prompts,
+                            and agentic writing helper (blocked from directly editing the manuscript).
+                        </div>
+                    </div>
+                    <div class="project">
+                        <div class="title">
+                            <a href="https://github.com/redoakcodes/scholium">
+                                Scholium
+                                <img src="./assets/GitHub_Invertocat_Black.svg" alt="GitHub Logo" />
+                            </a>
+                        </div>
+                        <div class="description">
+                            AI Agent powered educational "book" experience. Prompt it what you want to
+                            learn and it will generate a short book.
+                        </div>
+                    </div>
+                    <div class="project">
+                        <div class="title">
+                            <a href="https://gitlab.com/redoakcodes1/binauralom">
+                                Binauralom
+                                <img src="./assets/gitlab-logo-500-rgb.svg" alt="GitLab logo" />
+                            </a>
+                        </div>
+                        <div class="description">
+                            Binaural Beats and Isochronic Tones generator in javascript.
+                        </div>
+                    </div>
+                </aside>
+            </main>
+        </div>
+    </body>
+</html>
