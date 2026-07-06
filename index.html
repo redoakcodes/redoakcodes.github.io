@@ -137,6 +137,26 @@
             article span.first {
                 font-size: 24pt;
             }
+
+            footer {
+                margin-top: 25pt;
+                display: flex;
+                flex-basis: 100%;
+                order: 3;
+                font-size: 8pt;
+                flex-direction: row;
+                justify-content: space-around;
+                flex-wrap: wrap;
+            }
+
+            footer div.short-border {
+                flex-basis: 35%;
+                border-top: 1px solid rgba(165, 42, 42, 0.55);
+            }
+
+            footer ol {
+                flex-basis: 100%;
+            }
         </style>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -165,8 +185,8 @@
                             <li>We live in the mountains of Western North Carolina with our two cats and various wildlife who wander through our woodsy yard.</li>
                             <li>I am a bookworm. Some of my favorite topics are: consciousness, neuroscience, philosophy, and sci-fi.</li>
                             <li>I greatly enjoy trailrunning and introducing my children to the ecosystems around them.</li>
-                            <li>I am an amateur woodworker—my current project is a treehouse for my 5 year old.</li>
-                            <li>I recently bought and have learned to use a scythe.</li>
+                            <li>I am an amateur woodworker—my current project<sup>1</sup> is a treehouse for my 5 year old.</li>
+                            <li>I recently bought and have learned to use a scythe<sup>2</sup>.</li>
                         </ul>
                     </section>
                 </article>
@@ -231,6 +251,28 @@
                     </div>
                 </aside>
             </main>
+            <footer>
+                <div class="short-border"></div>
+                <ol>
+                    <li>
+                        Discounting the numerous other in-progress projects<sup>3</sup> that are waiting for me to get 
+                        back to them<sup>4</sup>.
+                    </li>
+                    <li>
+                        Living in Western NC means living on a hillside. Combine that with woodsy, and I have some 
+                        naturalized<sup>5</sup> hillside that is too steep to mow and too overgrown for a weedeater. Turns 
+                        out, humans have been using scythes<sup>6</sup> for millennia for good reasons.
+                    </li>
+                    <li>Wainscoting the hallway with a full length picture rail, my office.</li>
+                    <li>
+                        Apparently certain activities, like painting, or operating a pneumatic nail gun, are not especially 
+                        appreciated by babies or young children.
+                    </li>
+                    <li>Weedy</li>
+                    <li>Anyone else a Terry Pratchett fan? "What can the harvest hope for, if not for the care of the reaper man?"</li>
+                </ol>
+                <div>@ 2026 Brent Johnson</div>
+            </footer>
         </div>
     </body>
 </html>
