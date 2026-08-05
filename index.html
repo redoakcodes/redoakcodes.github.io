@@ -58,6 +58,13 @@
                 height: 200pt;
             }
 
+            header .jobtitle {
+                transition: opacity 1s;
+                display: inline;
+                position: absolute;
+                padding-left: 3pt;
+            }
+
             main {
                 display: flex;
                 flex-direction: row;
@@ -157,10 +164,25 @@
             footer ol {
                 flex-basis: 100%;
             }
+
+            .hidden {
+                opacity: 0;
+            }
         </style>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+        <script>
+            setInterval(() => {
+                document.querySelectorAll("div.jobtitle").forEach((ele) => {
+                    if(ele.classList.contains("hidden")) {
+                        ele.classList.remove("hidden");
+                    } else {
+                        ele.classList.add("hidden");
+                    }
+                });
+            }, 5000);
+        </script>
     </head>
 
     <body>
@@ -168,7 +190,10 @@
             <header>
                 <div class="left">
                     <div class="title">redoak.codes</div>
-                    <div class="subtitle">Brent Johnson, Staff Software Engineer</div>
+                    <div class="subtitle">Brent Johnson, 
+                        <div class="jobtitle hidden">Staff Software Engineer</div>
+                        <div class="jobtitle">Software Architect</div>
+                    </div>
                 </div>
                 <img src="./assets/redoakcodes_logo.svg" />
             </header>
